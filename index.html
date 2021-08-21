@@ -25,16 +25,16 @@
 
                     
                     <h1>Memory</h1>
-                         <button class="p-2 rounded ">8GB unified memory</button> <button class="p-2 rounded " >16GB unified memory</button>
+                         <button id="primary-button" class="p-2 rounded ">8GB unified memory</button> <button id="memory-button" class="p-2 rounded " >16GB unified memory</button>
 
                    <div class="py-5">
                         <h1>Storage</h1>
-                        <button class="p-2 rounded" >256GB SSD Storage</button> <button class="p-2 rounded " >512GB SSD Storage</button> <button class="p-2 rounded" >1TB SSD Storage</button>
+                        <button id="first-storage" class="p-2 rounded" >256GB SSD Storage</button> <button id="middle-storage" class="p-2 rounded " >512GB SSD Storage</button> <button id="last-storage" class="p-2 rounded" >1TB SSD Storage</button>
                    </div>
 
                     <div class="pb-5">
                         <h1>Chose your delivery option</h1>
-                        <button class="p-2 rounded " >Friday,Aug 25 FREE Prime delivery</button> <button class="p-2 rounded " >Friday, Aug 21 delivery charge $20</button>
+                        <button id="first-delivery-button" class="p-2 rounded " >Friday,Aug 25 FREE Prime delivery</button> <button id="last-delivery-button" class="p-2 rounded " >Friday, Aug 21 delivery charge $20</button>
                     </div>
 
                    <!--  <div class="cost-section">
@@ -68,16 +68,16 @@
                               </tr>
                           <tr>
                             <th scope="row">Extra Memory Cost</th>
-                            <td >$0</td>                           
+                            <td >$<span id="input-quantity">0</span></td>                           
                           </tr>
                           <tr>
                             <th scope="row">Extra Storage Cost</th>
-                            <td>$0</td>
+                            <td>$<span id="storage-cost" >0</span></td>
                             
                           </tr>
                           <tr>
                             <th scope="row">Delivery Charge</th>
-                            <td>$0</td> 
+                            <td>$<span id="delivery-cost">0</span></td> 
                                                        
                           </tr>
                           
@@ -105,5 +105,7 @@
             <h1 class="d-flex justify-content-center">Total:$1299</h1>
         </section>
     </main>
+
+    <script src="mac.js"></script>
 </body>
 </html>
