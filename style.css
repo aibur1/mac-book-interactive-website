@@ -1,0 +1,13 @@
+.bold-hr{
+    height: 4px !important;
+    color:rgba(0, 0, 0, 0.981);
+}
+
+.cost-section{
+    width: 400px;
+}
+
+.mac-button{
+    background-color: rgb(223, 12, 12);
+    
+}
