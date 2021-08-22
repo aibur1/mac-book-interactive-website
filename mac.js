@@ -1,17 +1,36 @@
-  //memory
-  document.getElementById('primary-button').addEventListener('click', function(){
-     const firstField = document.getElementById('input-quantity');
+  
+  
+  /*  function macbookCustomize(storage, value){
+     const firstField = document.getElementById(storage,value);
      const firstFieldText = firstField.innerText;
      const firstValue = parseFloat(firstFieldText);
-     firstField.innerText = 0;
-  });
+     firstValue.innerText = 180;
+  }  */
   
-  document.getElementById('memory-button').addEventListener('click',function(){
-   const inputField = document.getElementById('input-quantity');
+  
+  
+  
+  //memory
+  document.getElementById('first-button').addEventListener('click',function(){
+   const inputField = document.getElementById('memory-cost');
    const inputQuantityText = inputField.innerText;
    const quantityValue = parseFloat(inputQuantityText);
-   inputField.innerText = 180;
+   inputField.innerText = 0;
+   
+ 
 });
+
+
+  document.getElementById('last-button').addEventListener('click', function(){
+     
+     const firstField = document.getElementById('memory-cost');
+     const firstFieldText = firstField.innerText;
+     const firstValue = parseFloat(firstFieldText);
+     firstField.innerText = 180;
+ 
+  });
+  
+
 
 //storage
 document.getElementById('first-storage').addEventListener('click', function(){
@@ -26,6 +45,7 @@ document.getElementById('middle-storage').addEventListener('click', function(){
    const storageMemoryText = storageMemory.innerText;
    const memoryCost = parseFloat(storageMemoryText);
    storageMemory.innerText = 100;
+ 
 });
 
 document.getElementById('last-storage').addEventListener('click', function(){
@@ -39,16 +59,21 @@ document.getElementById('last-storage').addEventListener('click', function(){
 
 //delivery
 
-document.getElementById('first-delivery-button').addEventListener('click', function(){
+document.getElementById('first-delivery').addEventListener('click', function(){
    const deliveryCost = document.getElementById('delivery-cost');
-   const deliveryCostText = deliveryCost.innerText;
+   const deliveryCostText = deliveryCost.innerText; 
    const deliveryValue = parseFloat(deliveryCostText);
    deliveryCost.innerText = 0;
 });
 
-document.getElementById('last-delivery-button').addEventListener('click', function(){
+document.getElementById('last-delivery').addEventListener('click', function(){
    const deliveryCost = document.getElementById('delivery-cost');
    const deliveryCostText = deliveryCost.innerText;
    const deliveryValue = parseFloat(deliveryCostText);
    deliveryCost.innerText = 20;
 });
+
+
+ 
+
+
