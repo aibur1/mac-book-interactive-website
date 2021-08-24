@@ -97,6 +97,33 @@ document.getElementById('last-delivery').addEventListener('click', function(){
 
 } ;
 
+//promo code
+
+document.getElementById('promo-button').addEventListener('click', function(){
+   // const discountTotal = document.getElementById('final-total').innerText;
+   // const promoField = document.getElementById('promo-input');
+   // if(promoField.value == 'stevekaku'){
+   //    let totalValue = discountTotal / 20;
+   // discountTotal.innerText= totalValue;  
+   // }
+
+  const promoField = document.getElementById('promo-input');
+  //get promo input
+  const promoCode = promoField.value;
+  if(promoCode == 'stevekaku'){
+   //   console.log('valid user')
+   let final = document.getElementById('final-total');
+   let totalPrice = document.getElementById('total-price').innerText;
+   let discountPrice = totalPrice - (totalPrice / 100) * 20;
+  
+   final.innerText = discountPrice;
+  }
+  
+   
+
+   
+});
+
 
 
 
