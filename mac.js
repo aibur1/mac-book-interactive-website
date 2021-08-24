@@ -89,9 +89,18 @@ document.getElementById('last-delivery').addEventListener('click', function(){
    const c = parseInt(document.getElementById('delivery-cost').innerText);
    const totalCost = (document.getElementById('total-price').innerText = 1299 + a + b + c);
 
-  
+   
+   let totalPrice = parseInt(document.getElementById('total-price').innerText);
+   const total = document.getElementById('final-total');
+   const totalText = total.innerText;
+   total.innerText = totalPrice;
 
 } ;
+
+
+
+
+
  
 
 
