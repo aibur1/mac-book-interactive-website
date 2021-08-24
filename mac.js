@@ -16,6 +16,7 @@
    const inputQuantityText = inputField.innerText;
    const quantityValue = parseFloat(inputQuantityText);
    inputField.innerText = 0;
+   calculate()
    
  
 });
@@ -27,6 +28,8 @@
      const firstFieldText = firstField.innerText;
      const firstValue = parseFloat(firstFieldText);
      firstField.innerText = 180;
+     calculate() 
+    
  
   });
   
@@ -34,17 +37,19 @@
 
 //storage
 document.getElementById('first-storage').addEventListener('click', function(){
-   const storageMemory = document.getElementById('storage-cost');
+  const storageMemory = document.getElementById('storage-cost');
    const storageMemoryText = storageMemory.innerText;
    const memoryCost = parseFloat(storageMemoryText);
-   storageMemory.innerText = 0;
+   storageMemory.innerText = 0; 
+   calculate()
 });
 
 document.getElementById('middle-storage').addEventListener('click', function(){
    const storageMemory = document.getElementById('storage-cost');
    const storageMemoryText = storageMemory.innerText;
    const memoryCost = parseFloat(storageMemoryText);
-   storageMemory.innerText = 100;
+   storageMemory.innerText = 100; 
+   calculate()
  
 });
 
@@ -53,6 +58,7 @@ document.getElementById('last-storage').addEventListener('click', function(){
    const storageMemoryText = storageMemory.innerText;
    const memoryCost = parseFloat(storageMemoryText);
    storageMemory.innerText = 180;
+   calculate()
 });
 
 
@@ -64,6 +70,7 @@ document.getElementById('first-delivery').addEventListener('click', function(){
    const deliveryCostText = deliveryCost.innerText; 
    const deliveryValue = parseFloat(deliveryCostText);
    deliveryCost.innerText = 0;
+   calculate()
 });
 
 document.getElementById('last-delivery').addEventListener('click', function(){
@@ -71,9 +78,18 @@ document.getElementById('last-delivery').addEventListener('click', function(){
    const deliveryCostText = deliveryCost.innerText;
    const deliveryValue = parseFloat(deliveryCostText);
    deliveryCost.innerText = 20;
+   calculate()
 });
 
 
+ function calculate(){
+   
+   const a = parseFloat(document.getElementById('memory-cost').innerText);
+   const b = parseFloat(document.getElementById('storage-cost').innerText);
+   const c = parseFloat(document.getElementById('delivery-cost').innerText);
+   const totalCost = (document.getElementById('total-price').innerText = 1299 + a + b + c);
+
+} ;
  
 
 
