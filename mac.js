@@ -81,13 +81,15 @@ document.getElementById('last-delivery').addEventListener('click', function(){
    calculate()
 });
 
-
+// calculate total cost
  function calculate(){
    
-   const a = parseFloat(document.getElementById('memory-cost').innerText);
-   const b = parseFloat(document.getElementById('storage-cost').innerText);
-   const c = parseFloat(document.getElementById('delivery-cost').innerText);
+   const a = parseInt(document.getElementById('memory-cost').innerText);
+   const b = parseInt(document.getElementById('storage-cost').innerText);
+   const c = parseInt(document.getElementById('delivery-cost').innerText);
    const totalCost = (document.getElementById('total-price').innerText = 1299 + a + b + c);
+
+  
 
 } ;
  
