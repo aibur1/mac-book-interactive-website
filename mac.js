@@ -1,11 +1,11 @@
   
   
-  /*  function macbookCustomize(storage, value){
-     const firstField = document.getElementById(storage,value);
+   /* function macbookCustomize(storage){
+     const firstField = document.getElementById(storage);
      const firstFieldText = firstField.innerText;
      const firstValue = parseFloat(firstFieldText);
-     firstValue.innerText = 180;
-  }  */
+    firstValue.innerText = 0;
+  } */ 
   
   
   
@@ -16,6 +16,7 @@
    const inputQuantityText = inputField.innerText;
    const quantityValue = parseFloat(inputQuantityText);
    inputField.innerText = 0;
+   
    calculate()
    
  
